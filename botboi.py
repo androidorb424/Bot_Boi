@@ -9,6 +9,7 @@ import chalk
 
 
 bot = commands.Bot(command_prefix='#')
+#some guides use client instead of bot
 
 @bot.event
 async def on_ready():
@@ -36,4 +37,3 @@ async def kick(ctx, user: discord.Member):
 
 
 bot.run(token)
-f
