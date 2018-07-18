@@ -7,6 +7,7 @@ from key import (username,token)
 import asyncio
 import chalk
 
+
 bot = commands.Bot(command_prefix='#')
 
 @bot.event
@@ -35,3 +36,4 @@ async def kick(ctx, user: discord.Member):
 
 
 bot.run(token)
+f
