@@ -3,6 +3,7 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
+from key import (username,token)
 import asyncio
 import chalk
 
@@ -33,4 +34,4 @@ async def kick(ctx, user: discord.Member):
     await bot.kick(user)
 
 
-bot.run("NDY1Mzc5NzE3MjkwMTMxNDg3.DiMq5w.V138kodHQf2kbjFtDfGlcdcecHo")
+bot.run(token)
