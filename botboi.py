@@ -8,7 +8,7 @@ import asyncio
 import chalk
 
 
-bot = commands.Bot(command_prefix='#')
+bot = commands.Bot(command_prefix='.')
 #some guides use client instead of bot
 
 @bot.event
@@ -19,7 +19,7 @@ async def on_ready():
 
 @bot.command(pass_context=True)
 async def ping(ctx):
-    await bot.say(":ping_pong: ping!! xSSS")
+    await bot.say(":ping_pong: pong")
     print ("user has pinged")
 
 @bot.command(pass_context=True)
@@ -32,8 +32,18 @@ async def info(ctx, user: discord.Member):
 
 @bot.command(pass_context=True)
 async def kick(ctx, user: discord.Member):
-    await bot.say(":boot: Cya, {}. Ya loser!".format(user.name))
+    await bot.say("adios(spanish for goodbye), {}. Nerd".format(user.name))
     await bot.kick(user)
+
+
+@bot.command(pass_context=True)
+async def clear(ctx, amount=10):
+    channel = ctx.message.channel
+    messages = []
+    async for message in bot.logs_from(channel, limit=int(amount)):
+        messages.append(message)
+    await bot.delete_messages(messages)
+    await bot.say('Messages deleted.')
 
 
 bot.run(token)
