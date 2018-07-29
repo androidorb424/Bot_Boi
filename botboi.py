@@ -30,10 +30,10 @@ async def info(ctx, user: discord.Member):
     await bot.say("The users highest role is: {}".format(user.top_role))
     await bot.say("The user joined at: {}".format(user.joined_at))
 
-@bot.command(pass_context=True)
-async def kick(ctx, user: discord.Member):
-    await bot.say("adios(spanish for goodbye), {}. Nerd".format(user.name))
-    await bot.kick(user)
+#@bot.command(pass_context=True)
+#async def kick(ctx, user: discord.Member):
+#    await bot.say("adios(spanish for goodbye), {}. Nerd".format(user.name))
+#    await bot.kick(user)
 
 
 @bot.command(pass_context=True)
