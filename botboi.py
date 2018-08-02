@@ -23,6 +23,11 @@ async def ping(ctx):
     print ("user has pinged")
 
 @bot.command(pass_context=True)
+async def source(ctx):
+    await bot.say("https://github.com/androidorb424/Bot_Boi")
+
+
+@bot.command(pass_context=True)
 async def info(ctx, user: discord.Member):
     await bot.say("The users name is: {}".format(user.name))
     await bot.say("The users ID is: {}".format(user.id))
