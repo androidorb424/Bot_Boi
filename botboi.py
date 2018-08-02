@@ -3,12 +3,12 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
-from key import (username,token)
+from botboi.key.py import (username,token)
 import asyncio
 import chalk
 
 
-bot = commands.Bot(command_prefix='.')
+bot = commands.Bot(command_prefix='!')
 #some guides use client instead of bot
 
 @bot.event
@@ -44,6 +44,8 @@ async def clear(ctx, amount=10):
         messages.append(message)
     await bot.delete_messages(messages)
     await bot.say('Messages deleted.')
+
+
 
 
 bot.run(token)
