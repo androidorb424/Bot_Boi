@@ -1,1 +1,1 @@
-worker: node botboi.py
+worker: python3 bot.py
