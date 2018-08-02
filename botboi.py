@@ -3,7 +3,7 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
-#from key import (username,token)
+from key import (username,token)
 import asyncio
 import chalk
 
