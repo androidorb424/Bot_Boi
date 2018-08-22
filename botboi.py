@@ -53,4 +53,5 @@ async def clear(ctx, amount=10):
 
 
 
-bot.run(token)
+#bot.run(token)
+bot.login(process.env.token);
