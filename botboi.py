@@ -6,6 +6,7 @@ from discord.ext.commands import Bot
 from key import (username,token)
 import asyncio
 import chalk
+#test
 
 
 bot = commands.Bot(command_prefix='!')
