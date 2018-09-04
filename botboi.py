@@ -54,7 +54,9 @@ async def clear(ctx, amount=10):
 
 
 
-token = S3Connection(os.environ['key'], os.environ['key'])
+#token = S3Connection(os.environ['key'], os.environ['key'])
+token = NDY4OTczNDEzNTQxNzQwNTQ0.DnBk8g.SutSarqbknAd0Kx-TtbeisuY3u8
+
 
 bot.run(token)
 #bot.login(process.env.oken);
