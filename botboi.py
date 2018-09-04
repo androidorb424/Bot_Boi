@@ -3,10 +3,10 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
-from key import (username,token)
+#from key import (username,token)
 import asyncio
-import chalk
-from boto.s3.connection import S3Connection
+#import chalk
+#from boto.s3.connection import S3Connection
 
 
 
@@ -54,9 +54,9 @@ async def clear(ctx, amount=10):
 
 
 
-#token = S3Connection(os.environ['key'], os.environ['key'])
-token = NDY4OTczNDEzNTQxNzQwNTQ0.DnBk8g.SutSarqbknAd0Kx-TtbeisuY3u8
+token = S3Connection(os.environ['key'], os.environ['key'])
+#token = NDY4OTczNDEzNTQxNzQwNTQ0.DnBk8g.SutSarqbknAd0Kx-TtbeisuY3u8
 
 
-bot.run(token)
+#bot.run('NDY4OTczNDEzNTQxNzQwNTQ0.DnBk8g.SutSarqbknAd0Kx-TtbeisuY3u8')
 #bot.login(process.env.oken);
