@@ -6,7 +6,8 @@ from discord.ext.commands import Bot
 from key import (username,token)
 import asyncio
 import chalk
-#test
+from boto.s3.connection import S3Connection
+
 
 
 bot = commands.Bot(command_prefix='!')
@@ -53,6 +54,7 @@ async def clear(ctx, amount=10):
 
 
 
+token = S3Connection(os.environ['key'], os.environ['key'])
 
-#bot.run(token)
-bot.login(process.env.token);
+bot.run(token)
+#bot.login(process.env.oken);
