@@ -6,7 +6,7 @@ from discord.ext.commands import Bot
 #from key import (username,token)
 import asyncio
 #import chalk
-#from boto.s3.connection import S3Connection
+from boto.s3.connection import S3Connection
 
 
 
